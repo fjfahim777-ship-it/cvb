@@ -1,0 +1,71 @@
+{
+  "status": "evidence_found",
+  "important_rule": "Only use authentication patterns supported by actual source evidence.",
+  "evidence": [
+    {
+      "project": "bangla-news-24",
+      "file": "src\\app\\profile\\page.tsx",
+      "evidence": {
+        "keywords": [
+          "session"
+        ],
+        "evidence": "\"use client\"; import { authClient } from \"@/lib/auth-client\"; import Link from \"next/link\"; import React, { useState } from \"react\"; const ProfilePage = () => { const { data: session } = authClient.useSession(); const user = session?.user; const [show, setShow] = useState(false) const handleUpdateProfile = async (e:React.SubmitEvent<HTMLElement>) => { e.preventDefault() const formData = new FormData(e.target); const newUserData = Object.fromEntries(formData.entries()) as {name: string, image:string } await authClient.updateUser({ ...newUserData }) } const handleShowForm = () => { setShow(!show) } return (",
+        "validation": {
+          "status": "validated",
+          "auth_calls_detected": 3,
+          "auth_imports_detected": 2
+        }
+      }
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\app\\signin\\page.tsx",
+      "evidence": {
+        "keywords": [
+          "signIn"
+        ],
+        "evidence": "e.preventDefault(); const formData = new FormData(e.target); const user = Object.fromEntries(formData.entries()) as { email: string; password: string; }; console.log(user); const { data, error } = await authClient.signIn.email({ ...user, callbackURL: \"/\", }); if (data) { toast.success(\"Sign In successfull!\"); console.log(data); } if (error) { toast.error(\"Something went error!\"); console.log(error); } }; const handleGoogleSignIn = async () => { await authClient.signIn.social({ provider: \"google\", }); }; const handleGithubSignIn = async () => { await authClient.signIn.social({ provider: \"github\", }); } return"
+      }
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\app\\signup\\page.tsx",
+      "evidence": {
+        "keywords": [
+          "signIn",
+          "signUp"
+        ],
+        "evidence": ".signUp.email({ ...user, callbackURL: \"/\", }); if (data) { console.log(data); redirect(\"/\"); } if (error) { console.log(error); } }; const handleGoogleSignIn = async () => { await authClient.signIn.social({ provider: \"google\", }); }; const handleGithubSignIn = async () => { await authClient.signIn.social({ provider: \"github\", }); } return ( <div className=\"flex flex-col items-center justify-center mt-5\"> <h2 className=\"text-2xl font-bold text-red-700\">সাইন আপ</h2> <form onSubmit={onSubmit}> <fieldset className=\"fieldset rounded-box w-md\"> <label className=\"label\">নাম</label> <input name=\"name\""
+      }
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\components\\UserInfo.tsx",
+      "evidence": {
+        "keywords": [
+          "signup",
+          "signin",
+          "signOut",
+          "session"
+        ],
+        "evidence": "v> ) : ( <div> <Link href={\"/signin\"}> <button className=\"btn btn-ghost text-neutral-700 transition-colors hover:text-red-700\"> সাইন ইন </button> </Link> <Link href={\"/signup\"}> {\" \"} <button className=\"btn bg-red-700 px-3 py-1.5 font-semibold text-white transition-colors hover:bg-red-800\"> সাইন আপ </button> </Link> </div> )} </div> ); }; export default UserInfo;"
+      }
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\proxy.ts",
+      "evidence": {
+        "keywords": [
+          "signin",
+          "session"
+        ],
+        "evidence": "` if using `await` inside export async function proxy(request: NextRequest) { const session = await auth.api.getSession({ headers: await headers(), }); const user = session?.user; if (!user) { return NextResponse.redirect(new URL(\"/signin\", request.url)); } } export const config = { matcher: [\"/profile\", \"/news/:path\"], };",
+        "validation": {
+          "status": "validated",
+          "auth_calls_detected": 2,
+          "auth_imports_detected": 0
+        }
+      }
+    }
+  ]
+}

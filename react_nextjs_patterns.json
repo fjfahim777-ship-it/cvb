@@ -1,0 +1,719 @@
+{
+  "purpose": "Observed React and Next.js patterns.",
+  "projects": {
+    "b14-book-vibe": {
+      "state": [
+        {
+          "state": "sortBy",
+          "setter": "setSortBy",
+          "type": "\"rating\" | \"pages\" | \"year\"",
+          "initial_value": "\"rating\""
+        },
+        {
+          "state": "readBooks",
+          "setter": "setReadBooks",
+          "type": "IBook[]",
+          "initial_value": "[]"
+        },
+        {
+          "state": "wishlist",
+          "setter": "setWishlist",
+          "type": "IBook[]",
+          "initial_value": "[]"
+        }
+      ],
+      "effects": [],
+      "contexts": [
+        {
+          "kind": "context_usage",
+          "context": "BooksContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "BooksContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "BooksContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "BooksContext"
+        },
+        {
+          "kind": "context_definition",
+          "context": "BooksContext"
+        },
+        {
+          "kind": "provider",
+          "context": "BooksContext"
+        }
+      ],
+      "routing": [
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 3
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 4
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 3
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 3
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        }
+      ],
+      "array_methods": [
+        {
+          "method": "map",
+          "count": 2
+        },
+        {
+          "method": "find",
+          "count": 2
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 2
+        },
+        {
+          "method": "sort",
+          "count": 3
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        }
+      ],
+      "components": [
+        {
+          "name": "BookDetailsLoading",
+          "type": "component"
+        },
+        {
+          "name": "BooksLoading",
+          "type": "component"
+        },
+        {
+          "name": "RootLayout",
+          "type": "component"
+        },
+        {
+          "name": "ListedBooks",
+          "type": "component"
+        },
+        {
+          "name": "GlobalLoading",
+          "type": "component"
+        },
+        {
+          "name": "TriangleBar",
+          "type": "component"
+        },
+        {
+          "name": "CustomColorLabel",
+          "type": "component"
+        },
+        {
+          "name": "ReadBooks",
+          "type": "component"
+        },
+        {
+          "name": "ReadButton",
+          "type": "component"
+        },
+        {
+          "name": "WishListButton",
+          "type": "component"
+        },
+        {
+          "name": "Banner",
+          "type": "component"
+        },
+        {
+          "name": "BookCard",
+          "type": "component"
+        },
+        {
+          "name": "ListedBooksCard",
+          "type": "component"
+        },
+        {
+          "name": "Navbar",
+          "type": "component"
+        },
+        {
+          "name": "BooksProvider",
+          "type": "component"
+        }
+      ]
+    },
+    "bangla-news-24": {
+      "state": [
+        {
+          "state": "show",
+          "setter": "setShow",
+          "type": null,
+          "initial_value": "false"
+        }
+      ],
+      "effects": [],
+      "contexts": [],
+      "routing": [
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 3
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 2
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 3
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        }
+      ],
+      "array_methods": [
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 2
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "filter",
+          "count": 1
+        }
+      ],
+      "components": [
+        {
+          "name": "RootLayout",
+          "type": "component"
+        },
+        {
+          "name": "LoadingPage",
+          "type": "component"
+        },
+        {
+          "name": "NotFound",
+          "type": "component"
+        },
+        {
+          "name": "Home",
+          "type": "component"
+        },
+        {
+          "name": "ProfilePage",
+          "type": "component"
+        },
+        {
+          "name": "SignInPage",
+          "type": "component"
+        },
+        {
+          "name": "SignUpPage",
+          "type": "component"
+        },
+        {
+          "name": "Header",
+          "type": "component"
+        },
+        {
+          "name": "MainNews",
+          "type": "component"
+        },
+        {
+          "name": "NewsCard",
+          "type": "component"
+        },
+        {
+          "name": "UserInfo",
+          "type": "component"
+        }
+      ]
+    },
+    "Dev-Stack": {
+      "state": [
+        {
+          "state": "activeMenu",
+          "setter": "setActiveMenu",
+          "type": null,
+          "initial_value": "\"Home\""
+        },
+        {
+          "state": "selectedTechnologies",
+          "setter": "setSelectedTechnologies",
+          "type": "Tech[]",
+          "initial_value": "[]"
+        }
+      ],
+      "effects": [],
+      "contexts": [],
+      "routing": [
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 5
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        }
+      ],
+      "array_methods": [
+        {
+          "method": "filter",
+          "count": 1
+        },
+        {
+          "method": "some",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        }
+      ],
+      "components": [
+        {
+          "name": "App",
+          "type": "component"
+        },
+        {
+          "name": "Footer",
+          "type": "component"
+        },
+        {
+          "name": "Hero",
+          "type": "component"
+        },
+        {
+          "name": "Navbar",
+          "type": "component"
+        },
+        {
+          "name": "StackItem",
+          "type": "component"
+        },
+        {
+          "name": "TechnologyCard",
+          "type": "component"
+        },
+        {
+          "name": "TechnologyGrid",
+          "type": "component"
+        },
+        {
+          "name": "TechnologySection",
+          "type": "component"
+        },
+        {
+          "name": "YourStack",
+          "type": "component"
+        }
+      ]
+    },
+    "Fitlog": {
+      "state": [
+        {
+          "state": "activeTab",
+          "setter": "setActiveTab",
+          "type": null,
+          "initial_value": "tab === \"saved\" ? \"saved\" : \"plan\""
+        },
+        {
+          "state": "sortBy",
+          "setter": "setSortBy",
+          "type": null,
+          "initial_value": "\"duration\""
+        },
+        {
+          "state": "planWorkouts",
+          "setter": "setPlanWorkouts",
+          "type": "Workout[]",
+          "initial_value": "[]"
+        },
+        {
+          "state": "savedWorkouts",
+          "setter": "setSavedWorkouts",
+          "type": "Workout[]",
+          "initial_value": "[]"
+        }
+      ],
+      "effects": [],
+      "contexts": [
+        {
+          "kind": "context_usage",
+          "context": "WorkoutContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "WorkoutContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "WorkoutContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "WorkoutContext"
+        },
+        {
+          "kind": "context_usage",
+          "context": "WorkoutContext"
+        },
+        {
+          "kind": "context_definition",
+          "context": "WorkoutContext"
+        },
+        {
+          "kind": "provider",
+          "context": "WorkoutContext"
+        }
+      ],
+      "routing": [
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 8
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "Link",
+          "count": 1
+        },
+        {
+          "pattern": "usePathname",
+          "count": 2
+        },
+        {
+          "pattern": "Link",
+          "count": 7
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 1
+        },
+        {
+          "pattern": "dynamic_route",
+          "count": 2
+        }
+      ],
+      "array_methods": [
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "reduce",
+          "count": 2
+        },
+        {
+          "method": "sort",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 2
+        },
+        {
+          "method": "find",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "map",
+          "count": 1
+        },
+        {
+          "method": "filter",
+          "count": 3
+        },
+        {
+          "method": "some",
+          "count": 1
+        },
+        {
+          "method": "some",
+          "count": 1
+        }
+      ],
+      "components": [
+        {
+          "name": "RootLayout",
+          "type": "component"
+        },
+        {
+          "name": "Loading",
+          "type": "component"
+        },
+        {
+          "name": "MyPlan",
+          "type": "component"
+        },
+        {
+          "name": "NotFound",
+          "type": "component"
+        },
+        {
+          "name": "Home",
+          "type": "component"
+        },
+        {
+          "name": "Hero",
+          "type": "component"
+        },
+        {
+          "name": "WorkoutCard",
+          "type": "component"
+        },
+        {
+          "name": "PlanWorkoutCard",
+          "type": "component"
+        },
+        {
+          "name": "Badge",
+          "type": "component"
+        },
+        {
+          "name": "Button",
+          "type": "component"
+        },
+        {
+          "name": "Button2",
+          "type": "component"
+        },
+        {
+          "name": "Footer",
+          "type": "component"
+        },
+        {
+          "name": "Navbar",
+          "type": "component"
+        },
+        {
+          "name": "AddToPlanButton",
+          "type": "component"
+        },
+        {
+          "name": "SaveButton",
+          "type": "component"
+        },
+        {
+          "name": "WorkoutProvider",
+          "type": "component"
+        }
+      ]
+    }
+  }
+}

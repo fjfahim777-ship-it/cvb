@@ -1,0 +1,304 @@
+{
+  "project_summaries": {
+    "b14-book-vibe": {
+      "project": "b14-book-vibe",
+      "file_count": 21,
+      "roles": {
+        "source": 4,
+        "loading": 3,
+        "page": 5,
+        "layout": 1,
+        "component": 7,
+        "context": 1
+      },
+      "components": 15,
+      "functions": 26,
+      "state_usage": 3,
+      "effects": 0,
+      "context_usage": 6,
+      "fetches": 3,
+      "forms": 0,
+      "authentication": 0,
+      "local_storage": 0,
+      "ui_categories": 48,
+      "array_methods": 9,
+      "relationships": {
+        "state_flows": 3,
+        "data_flows": 3,
+        "functionality_flows": 1,
+        "api_flows": 3,
+        "context_flows": 6,
+        "ui_flows": 7
+      }
+    },
+    "bangla-news-24": {
+      "project": "bangla-news-24",
+      "file_count": 23,
+      "roles": {
+        "source": 4,
+        "api_route": 1,
+        "page": 6,
+        "layout": 1,
+        "loading": 1,
+        "not_found": 1,
+        "component": 7,
+        "utility": 2
+      },
+      "components": 11,
+      "functions": 26,
+      "state_usage": 1,
+      "effects": 0,
+      "context_usage": 0,
+      "fetches": 6,
+      "forms": 3,
+      "authentication": 5,
+      "local_storage": 0,
+      "ui_categories": 40,
+      "array_methods": 7,
+      "relationships": {
+        "state_flows": 1,
+        "data_flows": 6,
+        "functionality_flows": 4,
+        "api_flows": 7,
+        "context_flows": 0,
+        "ui_flows": 6
+      }
+    },
+    "Dev-Stack": {
+      "project": "Dev-Stack",
+      "file_count": 13,
+      "roles": {
+        "source": 5,
+        "component": 8
+      },
+      "components": 9,
+      "functions": 9,
+      "state_usage": 2,
+      "effects": 0,
+      "context_usage": 0,
+      "fetches": 1,
+      "forms": 0,
+      "authentication": 0,
+      "local_storage": 0,
+      "ui_categories": 23,
+      "array_methods": 4,
+      "relationships": {
+        "state_flows": 2,
+        "data_flows": 1,
+        "functionality_flows": 1,
+        "api_flows": 1,
+        "context_flows": 0,
+        "ui_flows": 2
+      }
+    },
+    "Fitlog": {
+      "project": "Fitlog",
+      "file_count": 23,
+      "roles": {
+        "source": 5,
+        "layout": 1,
+        "loading": 1,
+        "page": 3,
+        "not_found": 1,
+        "component": 11,
+        "context": 1
+      },
+      "components": 16,
+      "functions": 23,
+      "state_usage": 4,
+      "effects": 0,
+      "context_usage": 7,
+      "fetches": 2,
+      "forms": 0,
+      "authentication": 0,
+      "local_storage": 0,
+      "ui_categories": 36,
+      "array_methods": 10,
+      "relationships": {
+        "state_flows": 4,
+        "data_flows": 2,
+        "functionality_flows": 3,
+        "api_flows": 2,
+        "context_flows": 7,
+        "ui_flows": 4
+      }
+    }
+  },
+  "recurring_patterns": {
+    "components": {
+      "occurrence_count": 51,
+      "projects_found": [
+        "b14-book-vibe",
+        "bangla-news-24",
+        "Dev-Stack",
+        "Fitlog"
+      ]
+    },
+    "functions": {
+      "occurrence_count": 84,
+      "projects_found": [
+        "b14-book-vibe",
+        "bangla-news-24",
+        "Dev-Stack",
+        "Fitlog"
+      ]
+    },
+    "state_usage": {
+      "occurrence_count": 10,
+      "projects_found": [
+        "b14-book-vibe",
+        "bangla-news-24",
+        "Dev-Stack",
+        "Fitlog"
+      ]
+    },
+    "effects": {
+      "occurrence_count": 0,
+      "projects_found": []
+    },
+    "context_usage": {
+      "occurrence_count": 13,
+      "projects_found": [
+        "b14-book-vibe",
+        "Fitlog"
+      ]
+    },
+    "fetches": {
+      "occurrence_count": 12,
+      "projects_found": [
+        "b14-book-vibe",
+        "bangla-news-24",
+        "Dev-Stack",
+        "Fitlog"
+      ]
+    },
+    "forms": {
+      "occurrence_count": 3,
+      "projects_found": [
+        "bangla-news-24"
+      ]
+    },
+    "authentication": {
+      "occurrence_count": 5,
+      "projects_found": [
+        "bangla-news-24"
+      ]
+    },
+    "local_storage": {
+      "occurrence_count": 0,
+      "projects_found": []
+    }
+  },
+  "consistency": {
+    "components": {
+      "projects_found": 4,
+      "total_projects": 4,
+      "percentage": 100.0,
+      "consistency": "high"
+    },
+    "functions": {
+      "projects_found": 4,
+      "total_projects": 4,
+      "percentage": 100.0,
+      "consistency": "high"
+    },
+    "state_usage": {
+      "projects_found": 4,
+      "total_projects": 4,
+      "percentage": 100.0,
+      "consistency": "high"
+    },
+    "effects": {
+      "projects_found": 0,
+      "total_projects": 4,
+      "percentage": 0.0,
+      "consistency": "low"
+    },
+    "context_usage": {
+      "projects_found": 2,
+      "total_projects": 4,
+      "percentage": 50.0,
+      "consistency": "medium"
+    },
+    "fetches": {
+      "projects_found": 4,
+      "total_projects": 4,
+      "percentage": 100.0,
+      "consistency": "high"
+    },
+    "forms": {
+      "projects_found": 1,
+      "total_projects": 4,
+      "percentage": 25.0,
+      "consistency": "low"
+    },
+    "authentication": {
+      "projects_found": 1,
+      "total_projects": 4,
+      "percentage": 25.0,
+      "consistency": "low"
+    },
+    "local_storage": {
+      "projects_found": 0,
+      "total_projects": 4,
+      "percentage": 0.0,
+      "consistency": "low"
+    }
+  },
+  "differences": {
+    "components": {
+      "b14-book-vibe": 15,
+      "bangla-news-24": 11,
+      "Dev-Stack": 9,
+      "Fitlog": 16
+    },
+    "functions": {
+      "b14-book-vibe": 26,
+      "bangla-news-24": 26,
+      "Dev-Stack": 9,
+      "Fitlog": 23
+    },
+    "state_usage": {
+      "b14-book-vibe": 3,
+      "bangla-news-24": 1,
+      "Dev-Stack": 2,
+      "Fitlog": 4
+    },
+    "effects": {
+      "b14-book-vibe": 0,
+      "bangla-news-24": 0,
+      "Dev-Stack": 0,
+      "Fitlog": 0
+    },
+    "context_usage": {
+      "b14-book-vibe": 6,
+      "bangla-news-24": 0,
+      "Dev-Stack": 0,
+      "Fitlog": 7
+    },
+    "fetches": {
+      "b14-book-vibe": 3,
+      "bangla-news-24": 6,
+      "Dev-Stack": 1,
+      "Fitlog": 2
+    },
+    "forms": {
+      "b14-book-vibe": 0,
+      "bangla-news-24": 3,
+      "Dev-Stack": 0,
+      "Fitlog": 0
+    },
+    "authentication": {
+      "b14-book-vibe": 0,
+      "bangla-news-24": 5,
+      "Dev-Stack": 0,
+      "Fitlog": 0
+    },
+    "local_storage": {
+      "b14-book-vibe": 0,
+      "bangla-news-24": 0,
+      "Dev-Stack": 0,
+      "Fitlog": 0
+    }
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "purpose": "Observed naming patterns.",
+  "projects": {
+    "b14-book-vibe": {
+      "variables": [],
+      "functions": [
+        {
+          "name": "BookDetailsLoading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBooks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "BookDetailsPage",
+          "parameters": "{ params }: IBookDetailsPageProps",
+          "async": true
+        },
+        {
+          "name": "BooksLoading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBooks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "Books",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "RootLayout",
+          "parameters": "{ children }: LayoutProps<\"/\">",
+          "async": false
+        },
+        {
+          "name": "ListedBooks",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "sortBooks",
+          "parameters": "books: IBook[]",
+          "async": false
+        },
+        {
+          "name": "GlobalLoading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "page",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getPath",
+          "parameters": "x: number, y: number, width: number, height: number",
+          "async": false
+        },
+        {
+          "name": "TriangleBar",
+          "parameters": "props: BarShapeProps",
+          "async": false
+        },
+        {
+          "name": "CustomColorLabel",
+          "parameters": "props: LabelProps",
+          "async": false
+        },
+        {
+          "name": "ReadBooks",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "ReadButton",
+          "parameters": "{ book }: { book: IBook }",
+          "async": false
+        },
+        {
+          "name": "handleReadBook",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "WishListButton",
+          "parameters": "{ book }: { book: IBook }",
+          "async": false
+        },
+        {
+          "name": "handleAddToWishlist",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Banner",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBooks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "Books",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "BookCard",
+          "parameters": "{ book }: IBookCardProps",
+          "async": false
+        },
+        {
+          "name": "ListedBooksCard",
+          "parameters": "{ book }: IListedBooksCardProps",
+          "async": false
+        },
+        {
+          "name": "Navbar",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "BooksProvider",
+          "parameters": "{ children }: { children: ReactNode }",
+          "async": false
+        }
+      ],
+      "components": [
+        {
+          "name": "BookDetailsLoading",
+          "type": "component"
+        },
+        {
+          "name": "BooksLoading",
+          "type": "component"
+        },
+        {
+          "name": "RootLayout",
+          "type": "component"
+        },
+        {
+          "name": "ListedBooks",
+          "type": "component"
+        },
+        {
+          "name": "GlobalLoading",
+          "type": "component"
+        },
+        {
+          "name": "TriangleBar",
+          "type": "component"
+        },
+        {
+          "name": "CustomColorLabel",
+          "type": "component"
+        },
+        {
+          "name": "ReadBooks",
+          "type": "component"
+        },
+        {
+          "name": "ReadButton",
+          "type": "component"
+        },
+        {
+          "name": "WishListButton",
+          "type": "component"
+        },
+        {
+          "name": "Banner",
+          "type": "component"
+        },
+        {
+          "name": "BookCard",
+          "type": "component"
+        },
+        {
+          "name": "ListedBooksCard",
+          "type": "component"
+        },
+        {
+          "name": "Navbar",
+          "type": "component"
+        },
+        {
+          "name": "BooksProvider",
+          "type": "component"
+        }
+      ]
+    },
+    "bangla-news-24": {
+      "variables": [],
+      "functions": [
+        {
+          "name": "CategoryNews",
+          "parameters": "{ params }: { params: { categoryId: string } }",
+          "async": true
+        },
+        {
+          "name": "RootLayout",
+          "parameters": "{ children }: LayoutProps<\"/\">",
+          "async": false
+        },
+        {
+          "name": "LoadingPage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "NewsDetails",
+          "parameters": "{params}: {params: {newsId:string}}",
+          "async": true
+        },
+        {
+          "name": "NotFound",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Home",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "ProfilePage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleUpdateProfile",
+          "parameters": "e:React.SubmitEvent<HTMLElement>",
+          "async": true
+        },
+        {
+          "name": "handleShowForm",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "SignInPage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "onSubmit",
+          "parameters": "e: React.SubmitEvent<HTMLElement>",
+          "async": true
+        },
+        {
+          "name": "handleGoogleSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "handleGithubSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "SignUpPage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "onSubmit",
+          "parameters": "e: React.SubmitEvent<HTMLElement>",
+          "async": true
+        },
+        {
+          "name": "handleGoogleSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "handleGithubSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "Header",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "MainNews",
+          "parameters": "{ news }: {news: News[]}",
+          "async": false
+        },
+        {
+          "name": "Marquee",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "MostRead",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "NavLinks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "NewsCard",
+          "parameters": "{news} : {news:News}",
+          "async": false
+        },
+        {
+          "name": "UserInfo",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleSignout",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "proxy",
+          "parameters": "request: NextRequest",
+          "async": true
+        }
+      ],
+      "components": [
+        {
+          "name": "RootLayout",
+          "type": "component"
+        },
+        {
+          "name": "LoadingPage",
+          "type": "component"
+        },
+        {
+          "name": "NotFound",
+          "type": "component"
+        },
+        {
+          "name": "Home",
+          "type": "component"
+        },
+        {
+          "name": "ProfilePage",
+          "type": "component"
+        },
+        {
+          "name": "SignInPage",
+          "type": "component"
+        },
+        {
+          "name": "SignUpPage",
+          "type": "component"
+        },
+        {
+          "name": "Header",
+          "type": "component"
+        },
+        {
+          "name": "MainNews",
+          "type": "component"
+        },
+        {
+          "name": "NewsCard",
+          "type": "component"
+        },
+        {
+          "name": "UserInfo",
+          "type": "component"
+        }
+      ]
+    },
+    "Dev-Stack": {
+      "variables": [],
+      "functions": [
+        {
+          "name": "App",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Footer",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Hero",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Navbar",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleRemoveTechnology",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleSelectTechnology",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBadgeColor",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "TechnologySection",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleRemoveAll",
+          "parameters": "",
+          "async": false
+        }
+      ],
+      "components": [
+        {
+          "name": "App",
+          "type": "component"
+        },
+        {
+          "name": "Footer",
+          "type": "component"
+        },
+        {
+          "name": "Hero",
+          "type": "component"
+        },
+        {
+          "name": "Navbar",
+          "type": "component"
+        },
+        {
+          "name": "StackItem",
+          "type": "component"
+        },
+        {
+          "name": "TechnologyCard",
+          "type": "component"
+        },
+        {
+          "name": "TechnologyGrid",
+          "type": "component"
+        },
+        {
+          "name": "TechnologySection",
+          "type": "component"
+        },
+        {
+          "name": "YourStack",
+          "type": "component"
+        }
+      ]
+    },
+    "Fitlog": {
+      "variables": [],
+      "functions": [
+        {
+          "name": "RootLayout",
+          "parameters": "{ children }: LayoutProps<\"/\">",
+          "async": false
+        },
+        {
+          "name": "Loading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "MyPlan",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "NotFound",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Home",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getWorkouts",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "WorkoutDetails",
+          "parameters": "{ params }: WorkoutDetailsProps",
+          "async": true
+        },
+        {
+          "name": "Hero",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "WorkoutCard",
+          "parameters": "{ workout }: IWorkoutCardProps",
+          "async": false
+        },
+        {
+          "name": "WorkoutLibrary",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "PlanWorkoutCard",
+          "parameters": "{ workout, isSaved }: PlanWorkoutCardProps",
+          "async": false
+        },
+        {
+          "name": "handleMarkAsDone",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleRemove",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Badge",
+          "parameters": "{ children }: BadgeProps",
+          "async": false
+        },
+        {
+          "name": "Button",
+          "parameters": "{ children, onClick, className, disabled = false }: ButtonProps,",
+          "async": false
+        },
+        {
+          "name": "Button2",
+          "parameters": "{ children, onClick, className }: ButtonProps",
+          "async": false
+        },
+        {
+          "name": "Footer",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Navbar",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "AddToPlanButton",
+          "parameters": "{ workout }: AddToPlanButtonProps",
+          "async": false
+        },
+        {
+          "name": "handleAddToPlan",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "SaveButton",
+          "parameters": "{ workout }: SaveButtonProps",
+          "async": false
+        },
+        {
+          "name": "handleSave",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "WorkoutProvider",
+          "parameters": "{ children }: { children: ReactNode }",
+          "async": false
+        }
+      ],
+      "components": [
+        {
+          "name": "RootLayout",
+          "type": "component"
+        },
+        {
+          "name": "Loading",
+          "type": "component"
+        },
+        {
+          "name": "MyPlan",
+          "type": "component"
+        },
+        {
+          "name": "NotFound",
+          "type": "component"
+        },
+        {
+          "name": "Home",
+          "type": "component"
+        },
+        {
+          "name": "Hero",
+          "type": "component"
+        },
+        {
+          "name": "WorkoutCard",
+          "type": "component"
+        },
+        {
+          "name": "PlanWorkoutCard",
+          "type": "component"
+        },
+        {
+          "name": "Badge",
+          "type": "component"
+        },
+        {
+          "name": "Button",
+          "type": "component"
+        },
+        {
+          "name": "Button2",
+          "type": "component"
+        },
+        {
+          "name": "Footer",
+          "type": "component"
+        },
+        {
+          "name": "Navbar",
+          "type": "component"
+        },
+        {
+          "name": "AddToPlanButton",
+          "type": "component"
+        },
+        {
+          "name": "SaveButton",
+          "type": "component"
+        },
+        {
+          "name": "WorkoutProvider",
+          "type": "component"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "purpose": "Observed application functionality.",
+  "flows": [
+    {
+      "project": "b14-book-vibe",
+      "file": "src\\app\\listed-books\\page.tsx",
+      "feature": "sorting",
+      "evidence_level": "observed",
+      "flow": [
+        "identify sorting option or condition",
+        "apply sort operation",
+        "render reordered collection"
+      ],
+      "pseudocode": [
+        "read selected sort option if present",
+        "sort collection",
+        "render sorted collection"
+      ],
+      "evidence": "| \"year\">(\"rating\");\n\n  // console.log(readBooks, wishlist, \"readBooks\", \"wishlist\");\n  // console.log(sortBy, \"sortBy\");\n\n  const sortBooks = (books: IBook[]) => {\n    const sortedBooks = [...books];\n\n    if (sortBy === \"rating\") {\n      sortedBooks.sort((a, b) => b.rating - a.rating);\n    } else if (sortBy === \"pages\") {\n      sortedBooks.sort((a, b) => b.totalPages - a.totalPages);\n    } else if (sortBy === \"year\") {\n      sortedBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);\n    }\n\n    return sortedBooks;\n  };\n\n  const sortedReadBooks = sortBooks(readBooks);\n  const sortedWishlist = sortBooks(wishlist);\n\n  console.log(sortedReadBooks, \"sortedReadBooks\");\n  console.log(sortedWishlist, \"sortedWishlist\");\n  return (\n    <div className=\"container mx-auto py-[20px]\">\n      <h2 className=\"my-4 bg-amber-100 rounded-3xl py-16 font-bold text-4xl text-center\">\n        Listed Books\n      </h2>\n\n      <div className=\"text-center\">\n        <select\n          value={sortBy}\n          onChange={(e) =>\n            setSortBy(e.target.value as \"rating\" | \"pages\" | \"year\")\n          }\n          defaultValue=\"Pick a Runtime\"\n          className=\"select select-success \"\n        >\n          <option disabled={true}>Sort by</option>\n          <option value={\"rating\"}>Rating</option>\n          <option value={\"pages\"}>Number of Pages</option>\n          <option value={\"year\"}>Published Year</option>\n        </select>\n      </div>\n\n      {/* name of each tab group should be unique */}\n      <div className=\"tabs tabs-lift\">\n        <input\n          type=\"radio\"\n          name=\"my_tabs_3\"\n          className=\"tab\"\n          aria-label={`Read Books (${readBooks.length})`}\n        />\n        <div className=\"tab-content bg-base-100 bor"
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\app\\profile\\page.tsx",
+      "feature": "form_handling",
+      "evidence_level": "observed",
+      "flow": [
+        "render form",
+        "receive user input",
+        "handle submission",
+        "process submitted data"
+      ],
+      "pseudocode": [
+        "render form",
+        "read form values",
+        "handle submit event",
+        "process submitted data"
+      ],
+      "evidence": "r?.image as string}\n              />\n            </div>\n          </div>\n        </Link>\n\n        <h2>{user?.name}</h2>\n\n        <p>{user?.email}</p>\n\n        <button onClick={handleShowForm} className=\"btn\">Edit Profile</button>\n\n      { show &&    <form onSubmit={handleUpdateProfile}>\n        <fieldset className=\"fieldset   rounded-box w-md\">\n          <label className=\"label\">নাম</label>\n          <input\n            name=\"name\"\n            type=\"text\"\n            className=\"input w-md\"\n            placeholder=\"Name\"\n          />\n\n          <label className=\"label\">ImageURL</label>\n          <input\n            name=\"image\"\n            type=\"url\"\n            className=\"input w-md\"\n            placeholder=\"Image\"\n          />\n\n          <button type=\"submit\" className=\"btn text-white bg-red-700 mt-4 \">\n            Update Profile\n          </button>\n        </fieldset>\n      </form>}\n      </div>\n\n    \n    </div>\n  );\n};\n\nexport default ProfilePage;"
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\app\\signin\\page.tsx",
+      "feature": "form_handling",
+      "evidence_level": "observed",
+      "flow": [
+        "render form",
+        "receive user input",
+        "handle submission",
+        "process submitted data"
+      ],
+      "pseudocode": [
+        "render form",
+        "read form values",
+        "handle submit event",
+        "process submitted data"
+      ],
+      "evidence": "bSignIn = async () => {\n await authClient.signIn.social({\n      provider: \"github\",\n    });\n  }\n\n  return (\n    <div className=\"flex flex-col items-center justify-center mt-5\">\n      <h2 className=\"text-2xl font-bold text-red-700\">সাইন ইন</h2>\n      <form onSubmit={onSubmit}>\n        <fieldset className=\"fieldset   rounded-box w-md\">\n          <label className=\"label\">ইমেইল</label>\n          <input\n            name=\"email\"\n            type=\"email\"\n            className=\"input w-md\"\n            placeholder=\"Email\"\n          />\n\n          <label className=\"label\">পাসওয়ার্ড</label>\n          <input\n            name=\"password\"\n            type=\"password\"\n            className=\"input w-md\"\n            placeholder=\"Password\"\n          />\n\n          <button type=\"submit\" className=\"btn text-white bg-red-700 mt-4 \">\n            সাইন ইন করুন\n          </button>\n        </fieldset>\n      </form>\n\n      <button onClick={handleGoogleSignIn} className=\"btn \">Sign In With Google</button>\n      <button onClick={handleGithubSignIn} className=\"btn \">Sign In With Github</button>\n    </div>\n  );\n};\n\nexport default SignInPage;"
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\app\\signup\\page.tsx",
+      "feature": "form_handling",
+      "evidence_level": "observed",
+      "flow": [
+        "render form",
+        "receive user input",
+        "handle submission",
+        "process submitted data"
+      ],
+      "pseudocode": [
+        "render form",
+        "read form values",
+        "handle submit event",
+        "process submitted data"
+      ],
+      "evidence": "bSignIn = async () => {\n await authClient.signIn.social({\n      provider: \"github\",\n    });\n  }\n\n  return (\n    <div className=\"flex flex-col items-center justify-center mt-5\">\n      <h2 className=\"text-2xl font-bold text-red-700\">সাইন আপ</h2>\n      <form onSubmit={onSubmit}>\n        <fieldset className=\"fieldset   rounded-box w-md\">\n          <label className=\"label\">নাম</label>\n          <input\n            name=\"name\"\n            type=\"text\"\n            className=\"input w-md\"\n            placeholder=\"Name\"\n          />\n\n          <label className=\"label\">ImageURL</label>\n          <input\n            name=\"image\"\n            type=\"url\"\n            className=\"input w-md\"\n            placeholder=\"Image\"\n          />\n\n          <label className=\"label\">ইমেইল</label>\n          <input\n            name=\"email\"\n            type=\"email\"\n            className=\"input w-md\"\n            placeholder=\"Email\"\n          />\n\n          <label className=\"label\">পাসওয়ার্ড</label>\n          <input\n            name=\"password\"\n            type=\"password\"\n            className=\"input w-md\"\n            placeholder=\"Password\"\n          />\n\n          <button type=\"submit\" className=\"btn text-white bg-red-700 mt-4 \">\n            সাইন আপ করুন\n          </button>\n        </fieldset>\n      </form>\n\n         <button onClick={handleGoogleSignIn} className=\"btn \">Sign In With Google</button>\n      <button onClick={handleGithubSignIn} className=\"btn \">Sign In With Github</button>\n    </div>\n  );\n};\n\nexport default SignUpPage;"
+    },
+    {
+      "project": "bangla-news-24",
+      "file": "src\\components\\NavLinks.tsx",
+      "feature": "filtering",
+      "evidence_level": "observed",
+      "flow": [
+        "identify filtering condition",
+        "filter collection",
+        "render matching items"
+      ],
+      "pseudocode": [
+        "read filtering condition",
+        "filter collection using condition",
+        "render filtered items"
+      ],
+      "evidence": "g | null\n    url:string\n    scrapable: boolean\n}\n\nconst NavLinks = async () => {\n  const res = await fetch(\"https://news-api-v2.vercel.app/api/categories\");\n  const data = await res.json();\n  const navs:Navs[] = data.data;\n  const filteredNavs = navs.filter((n) => n.scrapable);\n  return (\n    <div className=\"flex gap-5 justify-center mt-5\">\n      <Link href={\"/\"}>হোম</Link>\n\n      {filteredNavs.map((n, i) => (\n        <Link key={i} href={`/category/${n.slug}`}>\n          {n.title}\n        </Link>\n      ))}\n    </div>\n  );\n};\n\nexport default NavLinks;"
+    },
+    {
+      "project": "Dev-Stack",
+      "file": "src\\components\\TechnologySection\\StackItem.tsx",
+      "feature": "filtering",
+      "evidence_level": "observed",
+      "flow": [
+        "identify filtering condition",
+        "filter collection",
+        "render matching items"
+      ],
+      "pseudocode": [
+        "read filtering condition",
+        "filter collection using condition",
+        "render filtered items"
+      ],
+      "evidence": "Dispatch<SetStateAction<Tech[]>>\n}\n\nfunction StackItem({\n    technology,\n    selectedTechnologies,\n    setSelectedTechnologies,\n}: StackItemProps) {\n    const handleRemoveTechnology = () => {\n        const remainingTechnologies = selectedTechnologies.filter(\n            (item) => item.id !== technology.id\n        )\n\n        setSelectedTechnologies(remainingTechnologies)\n        toast.success(`${technology.name} is removed successfully`)\n    }\n\n    return (\n        <div className=\"flex items-center justify-between gap-3 p-3 rounded-md border border-gray-200 bg-white\">\n            <div className=\"flex items-center gap-3\">\n                <div className=\"w-10 h-10 rounded-md bg-gray-50 flex items-center justify-center\">\n\n                    <img src={technology.icon} alt={technology.name} className=\"w-6 h-6\" />\n                </div>\n\n                <div>\n                    <div className=\"text-sm font-semibold text-gray-800\">{technology.name}</div>\n                    <div className=\"text-xs text-gray-400\">{technology.category}\n                    </div>\n                </div>\n            </div>\n\n            <button type=\"button\" onClick={handleRemoveTechnology}\n                aria-label={`Remove ${technology.name}`}\n                className=\"w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-blue-50\">\n                X\n            </button>\n        </div>\n    )\n}\n\nexport default StackItem"
+    },
+    {
+      "project": "Fitlog",
+      "file": "src\\app\\my-plan\\page.tsx",
+      "feature": "search",
+      "evidence_level": "observed",
+      "flow": [
+        "receive search input",
+        "store or read search value",
+        "compare search value with data",
+        "render matching results"
+      ],
+      "pseudocode": [
+        "read search input",
+        "store search value",
+        "filter or search the collection",
+        "render matching results"
+      ],
+      "evidence": "{ useContext, useState } from \"react\";\nimport { WorkoutContext } from \"@/context/WorkoutContext\";\nimport PlanWorkoutCard from \"@/components/myPlan/PlanWorkoutCard\";\nimport { useSearchParams } from \"next/navigation\";\n\nconst MyPlan = () => {\n    const searchParams = useSearchParams();\n    const tab = searchParams.get(\"tab\");\n    const { planWorkouts } = useContext(WorkoutContext);\n    const { savedWorkouts } = useContext(WorkoutContext);\n    const [activeTab, setActiveTab] = useState(\n        tab === \"saved\" ? \"saved\" : \"plan\"\n    );\n    const [sortBy, setSortBy] = useState(\"duration\");\n    const workouts =\n        activeTab === \"plan\" ? planWorkouts : savedWorkouts;\n    const sortedWorkouts = [...workouts].sort((a, b) => {\n        if (sortBy === \"duration\") {\n            return a.duration - b.duration;\n        }\n\n        if (sortBy === \"calories\") {\n            return a.caloriesBurned - b.caloriesBurned;\n        }\n\n        return a.rating - b.rating;\n    });\n    const totalMinutes = planWorkouts.reduce(\n        (total, workout) => total + workout.duration,\n        0\n    );\n    const totalCalories = planWorkouts.reduce(\n        (total, workout) => total + workout.caloriesBurned,\n        0\n    );\n\n    return (\n        <main className=\"px-5 pt-11 pb-8\">\n            <div className=\"border border-zinc-800 rounded-2xl p-5 bg-[#12141c]\">\n                <div className=\"flex flex-col sm:flex-row\">\n                    <div className=\"w-full sm:w-1/3 px-4 py-4 -mt-4 sm:mt-0\">\n                        <p className=\"text-zinc-400 text-sm\">\n                            EXERCISES\n                        </p>\n                        <p className=\"text-[#a3e635] text-3xl font-bold mt-2\">\n                            {planWorkouts.length}"
+    },
+    {
+      "project": "Fitlog",
+      "file": "src\\app\\my-plan\\page.tsx",
+      "feature": "sorting",
+      "evidence_level": "observed",
+      "flow": [
+        "identify sorting option or condition",
+        "apply sort operation",
+        "render reordered collection"
+      ],
+      "pseudocode": [
+        "read selected sort option if present",
+        "sort collection",
+        "render sorted collection"
+      ],
+      "evidence": "tActiveTab] = useState(\n        tab === \"saved\" ? \"saved\" : \"plan\"\n    );\n    const [sortBy, setSortBy] = useState(\"duration\");\n    const workouts =\n        activeTab === \"plan\" ? planWorkouts : savedWorkouts;\n    const sortedWorkouts = [...workouts].sort((a, b) => {\n        if (sortBy === \"duration\") {\n            return a.duration - b.duration;\n        }\n\n        if (sortBy === \"calories\") {\n            return a.caloriesBurned - b.caloriesBurned;\n        }\n\n        return a.rating - b.rating;\n    });\n    const totalMinutes = planWorkouts.reduce(\n        (total, workout) => total + workout.duration,\n        0\n    );\n    const totalCalories = planWorkouts.reduce(\n        (total, workout) => total + workout.caloriesBurned,\n        0\n    );\n\n    return (\n        <main className=\"px-5 pt-11 pb-8\">\n            <div className=\"border border-zinc-800 rounded-2xl p-5 bg-[#12141c]\">\n                <div className=\"flex flex-col sm:flex-row\">\n                    <div className=\"w-full sm:w-1/3 px-4 py-4 -mt-4 sm:mt-0\">\n                        <p className=\"text-zinc-400 text-sm\">\n                            EXERCISES\n                        </p>\n                        <p className=\"text-[#a3e635] text-3xl font-bold mt-2\">\n                            {planWorkouts.length}\n                        </p>\n                    </div>\n\n                    <div className=\"hidden sm:block w-px bg-zinc-800\"></div>\n\n                    <div className=\"w-full sm:w-1/3 px-4 sm:px-7 py-4 border-t border-zinc-800 sm:border-t-0\">\n                        <p className=\"text-zinc-400 text-sm\">\n                            MINUTES\n                        </p>\n                        <p className=\"text-white text-3xl font-bold mt-2\">"
+    },
+    {
+      "project": "Fitlog",
+      "file": "src\\components\\myPlan\\PlanWorkoutCard.tsx",
+      "feature": "filtering",
+      "evidence_level": "observed",
+      "flow": [
+        "identify filtering condition",
+        "filter collection",
+        "render matching items"
+      ],
+      "pseudocode": [
+        "read filtering condition",
+        "filter collection using condition",
+        "render filtered items"
+      ],
+      "evidence": "koutCardProps) => {\n    const {\n        planWorkouts,\n        setPlanWorkouts,\n        savedWorkouts,\n        setSavedWorkouts\n    } = useContext(WorkoutContext);\n\n    const handleMarkAsDone = () => {\n        setPlanWorkouts(\n            planWorkouts.filter((item) => item.id !== workout.id)\n        );\n        toast.success(\"Workout marked as done\");\n    };\n\n    const handleRemove = () => {\n\n        if (isSaved) {\n            setSavedWorkouts(\n                savedWorkouts.filter((item) => item.id !== workout.id)\n            );\n            toast.success(\"Removed from saved\");\n            return;\n        }\n\n        setPlanWorkouts(\n            planWorkouts.filter((item) => item.id !== workout.id)\n        );\n        toast.success(\"Removed from today's plan\");\n    };\n\n    return (\n        <div className=\"border border-zinc-800 rounded-2xl p-5 mt-6 bg-[#12141c] flex flex-wrap gap-4\">\n            <div className=\"relative w-full h-64 sm:w-32 sm:h-24 shrink-0 overflow-hidden rounded-xl\">\n                <Image\n                    src={workout.image}\n                    alt={workout.name}\n                    fill\n                    className=\"object-cover\"\n                />\n            </div>\n\n            <div>\n                <h3 className=\"text-white text-lg font-bold\">\n                    {workout.name}\n                </h3>\n\n                <p className=\"text-zinc-400 text-sm mt-1\">\n                    {workout.equipment}\n                </p>\n\n                <div className=\"flex gap-4 mt-3 text-zinc-400 text-sm\">\n                    <span>⏱ {workout.duration} min</span>\n                    <span>🔥 {workout.caloriesBurned} kcal</span>\n                    <span>☆ {workout.rating}</span>\n                </div>\n            </d"
+    }
+  ],
+  "pseudocode": {
+    "b14-book-vibe": [
+      {
+        "project": "b14-book-vibe",
+        "file": "src\\app\\listed-books\\page.tsx",
+        "pattern": "sorting",
+        "steps": [
+          "read selected sort option if present",
+          "sort collection",
+          "render sorted collection"
+        ],
+        "evidence": "| \"year\">(\"rating\");\n\n  // console.log(readBooks, wishlist, \"readBooks\", \"wishlist\");\n  // console.log(sortBy, \"sortBy\");\n\n  const sortBooks = (books: IBook[]) => {\n    const sortedBooks = [...books];\n\n    if (sortBy === \"rating\") {\n      sortedBooks.sort((a, b) => b.rating - a.rating);\n    } else if (sortBy === \"pages\") {\n      sortedBooks.sort((a, b) => b.totalPages - a.totalPages);\n    } else if (sortBy === \"year\") {\n      sortedBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);\n    }\n\n    return sortedBooks;\n  };\n\n  const sortedReadBooks = sortBooks(readBooks);\n  const sortedWishlist = sortBooks(wishlist);\n\n  console.log(sortedReadBooks, \"sortedReadBooks\");\n  console.log(sortedWishlist, \"sortedWishlist\");\n  return (\n    <div className=\"container mx-auto py-[20px]\">\n      <h2 className=\"my-4 bg-amber-100 rounded-3xl py-16 font-bold text-4xl text-center\">\n        Listed Books\n      </h2>\n\n      <div className=\"text-center\">\n        <select\n          value={sortBy}\n          onChange={(e) =>\n            setSortBy(e.target.value as \"rating\" | \"pages\" | \"year\")\n          }\n          defaultValue=\"Pick a Runtime\"\n          className=\"select select-success \"\n        >\n          <option disabled={true}>Sort by</option>\n          <option value={\"rating\"}>Rating</option>\n          <option value={\"pages\"}>Number of Pages</option>\n          <option value={\"year\"}>Published Year</option>\n        </select>\n      </div>\n\n      {/* name of each tab group should be unique */}\n      <div className=\"tabs tabs-lift\">\n        <input\n          type=\"radio\"\n          name=\"my_tabs_3\"\n          className=\"tab\"\n          aria-label={`Read Books (${readBooks.length})`}\n        />\n        <div className=\"tab-content bg-base-100 bor"
+      }
+    ],
+    "bangla-news-24": [
+      {
+        "project": "bangla-news-24",
+        "file": "src\\app\\profile\\page.tsx",
+        "pattern": "form_handling",
+        "steps": [
+          "render form",
+          "read form values",
+          "handle submit event",
+          "process submitted data"
+        ],
+        "evidence": "r?.image as string}\n              />\n            </div>\n          </div>\n        </Link>\n\n        <h2>{user?.name}</h2>\n\n        <p>{user?.email}</p>\n\n        <button onClick={handleShowForm} className=\"btn\">Edit Profile</button>\n\n      { show &&    <form onSubmit={handleUpdateProfile}>\n        <fieldset className=\"fieldset   rounded-box w-md\">\n          <label className=\"label\">নাম</label>\n          <input\n            name=\"name\"\n            type=\"text\"\n            className=\"input w-md\"\n            placeholder=\"Name\"\n          />\n\n          <label className=\"label\">ImageURL</label>\n          <input\n            name=\"image\"\n            type=\"url\"\n            className=\"input w-md\"\n            placeholder=\"Image\"\n          />\n\n          <button type=\"submit\" className=\"btn text-white bg-red-700 mt-4 \">\n            Update Profile\n          </button>\n        </fieldset>\n      </form>}\n      </div>\n\n    \n    </div>\n  );\n};\n\nexport default ProfilePage;"
+      },
+      {
+        "project": "bangla-news-24",
+        "file": "src\\app\\signin\\page.tsx",
+        "pattern": "form_handling",
+        "steps": [
+          "render form",
+          "read form values",
+          "handle submit event",
+          "process submitted data"
+        ],
+        "evidence": "bSignIn = async () => {\n await authClient.signIn.social({\n      provider: \"github\",\n    });\n  }\n\n  return (\n    <div className=\"flex flex-col items-center justify-center mt-5\">\n      <h2 className=\"text-2xl font-bold text-red-700\">সাইন ইন</h2>\n      <form onSubmit={onSubmit}>\n        <fieldset className=\"fieldset   rounded-box w-md\">\n          <label className=\"label\">ইমেইল</label>\n          <input\n            name=\"email\"\n            type=\"email\"\n            className=\"input w-md\"\n            placeholder=\"Email\"\n          />\n\n          <label className=\"label\">পাসওয়ার্ড</label>\n          <input\n            name=\"password\"\n            type=\"password\"\n            className=\"input w-md\"\n            placeholder=\"Password\"\n          />\n\n          <button type=\"submit\" className=\"btn text-white bg-red-700 mt-4 \">\n            সাইন ইন করুন\n          </button>\n        </fieldset>\n      </form>\n\n      <button onClick={handleGoogleSignIn} className=\"btn \">Sign In With Google</button>\n      <button onClick={handleGithubSignIn} className=\"btn \">Sign In With Github</button>\n    </div>\n  );\n};\n\nexport default SignInPage;"
+      },
+      {
+        "project": "bangla-news-24",
+        "file": "src\\app\\signup\\page.tsx",
+        "pattern": "form_handling",
+        "steps": [
+          "render form",
+          "read form values",
+          "handle submit event",
+          "process submitted data"
+        ],
+        "evidence": "bSignIn = async () => {\n await authClient.signIn.social({\n      provider: \"github\",\n    });\n  }\n\n  return (\n    <div className=\"flex flex-col items-center justify-center mt-5\">\n      <h2 className=\"text-2xl font-bold text-red-700\">সাইন আপ</h2>\n      <form onSubmit={onSubmit}>\n        <fieldset className=\"fieldset   rounded-box w-md\">\n          <label className=\"label\">নাম</label>\n          <input\n            name=\"name\"\n            type=\"text\"\n            className=\"input w-md\"\n            placeholder=\"Name\"\n          />\n\n          <label className=\"label\">ImageURL</label>\n          <input\n            name=\"image\"\n            type=\"url\"\n            className=\"input w-md\"\n            placeholder=\"Image\"\n          />\n\n          <label className=\"label\">ইমেইল</label>\n          <input\n            name=\"email\"\n            type=\"email\"\n            className=\"input w-md\"\n            placeholder=\"Email\"\n          />\n\n          <label className=\"label\">পাসওয়ার্ড</label>\n          <input\n            name=\"password\"\n            type=\"password\"\n            className=\"input w-md\"\n            placeholder=\"Password\"\n          />\n\n          <button type=\"submit\" className=\"btn text-white bg-red-700 mt-4 \">\n            সাইন আপ করুন\n          </button>\n        </fieldset>\n      </form>\n\n         <button onClick={handleGoogleSignIn} className=\"btn \">Sign In With Google</button>\n      <button onClick={handleGithubSignIn} className=\"btn \">Sign In With Github</button>\n    </div>\n  );\n};\n\nexport default SignUpPage;"
+      },
+      {
+        "project": "bangla-news-24",
+        "file": "src\\components\\NavLinks.tsx",
+        "pattern": "filtering",
+        "steps": [
+          "read filtering condition",
+          "filter collection using condition",
+          "render filtered items"
+        ],
+        "evidence": "g | null\n    url:string\n    scrapable: boolean\n}\n\nconst NavLinks = async () => {\n  const res = await fetch(\"https://news-api-v2.vercel.app/api/categories\");\n  const data = await res.json();\n  const navs:Navs[] = data.data;\n  const filteredNavs = navs.filter((n) => n.scrapable);\n  return (\n    <div className=\"flex gap-5 justify-center mt-5\">\n      <Link href={\"/\"}>হোম</Link>\n\n      {filteredNavs.map((n, i) => (\n        <Link key={i} href={`/category/${n.slug}`}>\n          {n.title}\n        </Link>\n      ))}\n    </div>\n  );\n};\n\nexport default NavLinks;"
+      }
+    ],
+    "Dev-Stack": [
+      {
+        "project": "Dev-Stack",
+        "file": "src\\components\\TechnologySection\\StackItem.tsx",
+        "pattern": "filtering",
+        "steps": [
+          "read filtering condition",
+          "filter collection using condition",
+          "render filtered items"
+        ],
+        "evidence": "Dispatch<SetStateAction<Tech[]>>\n}\n\nfunction StackItem({\n    technology,\n    selectedTechnologies,\n    setSelectedTechnologies,\n}: StackItemProps) {\n    const handleRemoveTechnology = () => {\n        const remainingTechnologies = selectedTechnologies.filter(\n            (item) => item.id !== technology.id\n        )\n\n        setSelectedTechnologies(remainingTechnologies)\n        toast.success(`${technology.name} is removed successfully`)\n    }\n\n    return (\n        <div className=\"flex items-center justify-between gap-3 p-3 rounded-md border border-gray-200 bg-white\">\n            <div className=\"flex items-center gap-3\">\n                <div className=\"w-10 h-10 rounded-md bg-gray-50 flex items-center justify-center\">\n\n                    <img src={technology.icon} alt={technology.name} className=\"w-6 h-6\" />\n                </div>\n\n                <div>\n                    <div className=\"text-sm font-semibold text-gray-800\">{technology.name}</div>\n                    <div className=\"text-xs text-gray-400\">{technology.category}\n                    </div>\n                </div>\n            </div>\n\n            <button type=\"button\" onClick={handleRemoveTechnology}\n                aria-label={`Remove ${technology.name}`}\n                className=\"w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-blue-50\">\n                X\n            </button>\n        </div>\n    )\n}\n\nexport default StackItem"
+      }
+    ],
+    "Fitlog": [
+      {
+        "project": "Fitlog",
+        "file": "src\\app\\my-plan\\page.tsx",
+        "pattern": "search",
+        "steps": [
+          "read search input",
+          "store search value",
+          "filter or search the collection",
+          "render matching results"
+        ],
+        "evidence": "{ useContext, useState } from \"react\";\nimport { WorkoutContext } from \"@/context/WorkoutContext\";\nimport PlanWorkoutCard from \"@/components/myPlan/PlanWorkoutCard\";\nimport { useSearchParams } from \"next/navigation\";\n\nconst MyPlan = () => {\n    const searchParams = useSearchParams();\n    const tab = searchParams.get(\"tab\");\n    const { planWorkouts } = useContext(WorkoutContext);\n    const { savedWorkouts } = useContext(WorkoutContext);\n    const [activeTab, setActiveTab] = useState(\n        tab === \"saved\" ? \"saved\" : \"plan\"\n    );\n    const [sortBy, setSortBy] = useState(\"duration\");\n    const workouts =\n        activeTab === \"plan\" ? planWorkouts : savedWorkouts;\n    const sortedWorkouts = [...workouts].sort((a, b) => {\n        if (sortBy === \"duration\") {\n            return a.duration - b.duration;\n        }\n\n        if (sortBy === \"calories\") {\n            return a.caloriesBurned - b.caloriesBurned;\n        }\n\n        return a.rating - b.rating;\n    });\n    const totalMinutes = planWorkouts.reduce(\n        (total, workout) => total + workout.duration,\n        0\n    );\n    const totalCalories = planWorkouts.reduce(\n        (total, workout) => total + workout.caloriesBurned,\n        0\n    );\n\n    return (\n        <main className=\"px-5 pt-11 pb-8\">\n            <div className=\"border border-zinc-800 rounded-2xl p-5 bg-[#12141c]\">\n                <div className=\"flex flex-col sm:flex-row\">\n                    <div className=\"w-full sm:w-1/3 px-4 py-4 -mt-4 sm:mt-0\">\n                        <p className=\"text-zinc-400 text-sm\">\n                            EXERCISES\n                        </p>\n                        <p className=\"text-[#a3e635] text-3xl font-bold mt-2\">\n                            {planWorkouts.length}"
+      },
+      {
+        "project": "Fitlog",
+        "file": "src\\app\\my-plan\\page.tsx",
+        "pattern": "sorting",
+        "steps": [
+          "read selected sort option if present",
+          "sort collection",
+          "render sorted collection"
+        ],
+        "evidence": "tActiveTab] = useState(\n        tab === \"saved\" ? \"saved\" : \"plan\"\n    );\n    const [sortBy, setSortBy] = useState(\"duration\");\n    const workouts =\n        activeTab === \"plan\" ? planWorkouts : savedWorkouts;\n    const sortedWorkouts = [...workouts].sort((a, b) => {\n        if (sortBy === \"duration\") {\n            return a.duration - b.duration;\n        }\n\n        if (sortBy === \"calories\") {\n            return a.caloriesBurned - b.caloriesBurned;\n        }\n\n        return a.rating - b.rating;\n    });\n    const totalMinutes = planWorkouts.reduce(\n        (total, workout) => total + workout.duration,\n        0\n    );\n    const totalCalories = planWorkouts.reduce(\n        (total, workout) => total + workout.caloriesBurned,\n        0\n    );\n\n    return (\n        <main className=\"px-5 pt-11 pb-8\">\n            <div className=\"border border-zinc-800 rounded-2xl p-5 bg-[#12141c]\">\n                <div className=\"flex flex-col sm:flex-row\">\n                    <div className=\"w-full sm:w-1/3 px-4 py-4 -mt-4 sm:mt-0\">\n                        <p className=\"text-zinc-400 text-sm\">\n                            EXERCISES\n                        </p>\n                        <p className=\"text-[#a3e635] text-3xl font-bold mt-2\">\n                            {planWorkouts.length}\n                        </p>\n                    </div>\n\n                    <div className=\"hidden sm:block w-px bg-zinc-800\"></div>\n\n                    <div className=\"w-full sm:w-1/3 px-4 sm:px-7 py-4 border-t border-zinc-800 sm:border-t-0\">\n                        <p className=\"text-zinc-400 text-sm\">\n                            MINUTES\n                        </p>\n                        <p className=\"text-white text-3xl font-bold mt-2\">"
+      },
+      {
+        "project": "Fitlog",
+        "file": "src\\components\\myPlan\\PlanWorkoutCard.tsx",
+        "pattern": "filtering",
+        "steps": [
+          "read filtering condition",
+          "filter collection using condition",
+          "render filtered items"
+        ],
+        "evidence": "koutCardProps) => {\n    const {\n        planWorkouts,\n        setPlanWorkouts,\n        savedWorkouts,\n        setSavedWorkouts\n    } = useContext(WorkoutContext);\n\n    const handleMarkAsDone = () => {\n        setPlanWorkouts(\n            planWorkouts.filter((item) => item.id !== workout.id)\n        );\n        toast.success(\"Workout marked as done\");\n    };\n\n    const handleRemove = () => {\n\n        if (isSaved) {\n            setSavedWorkouts(\n                savedWorkouts.filter((item) => item.id !== workout.id)\n            );\n            toast.success(\"Removed from saved\");\n            return;\n        }\n\n        setPlanWorkouts(\n            planWorkouts.filter((item) => item.id !== workout.id)\n        );\n        toast.success(\"Removed from today's plan\");\n    };\n\n    return (\n        <div className=\"border border-zinc-800 rounded-2xl p-5 mt-6 bg-[#12141c] flex flex-wrap gap-4\">\n            <div className=\"relative w-full h-64 sm:w-32 sm:h-24 shrink-0 overflow-hidden rounded-xl\">\n                <Image\n                    src={workout.image}\n                    alt={workout.name}\n                    fill\n                    className=\"object-cover\"\n                />\n            </div>\n\n            <div>\n                <h3 className=\"text-white text-lg font-bold\">\n                    {workout.name}\n                </h3>\n\n                <p className=\"text-zinc-400 text-sm mt-1\">\n                    {workout.equipment}\n                </p>\n\n                <div className=\"flex gap-4 mt-3 text-zinc-400 text-sm\">\n                    <span>⏱ {workout.duration} min</span>\n                    <span>🔥 {workout.caloriesBurned} kcal</span>\n                    <span>☆ {workout.rating}</span>\n                </div>\n            </d"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2125 @@
+{
+  "purpose": "Observed general coding style.",
+  "projects": {
+    "b14-book-vibe": {
+      "file_count": 21,
+      "file_roles": [
+        "source",
+        "source",
+        "source",
+        "loading",
+        "page",
+        "loading",
+        "page",
+        "layout",
+        "page",
+        "loading",
+        "page",
+        "page",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "context",
+        "source"
+      ],
+      "imports": [
+        {
+          "import": "{ defineConfig, globalIgnores }",
+          "source": "eslint/config"
+        },
+        {
+          "import": "nextVitals",
+          "source": "eslint-config-next/core-web-vitals"
+        },
+        {
+          "import": "nextTs",
+          "source": "eslint-config-next/typescript"
+        },
+        {
+          "import": "type { NextConfig }",
+          "source": "next"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "ReadButton",
+          "source": "@/components/bookDetails/ReadButton"
+        },
+        {
+          "import": "WishListButton",
+          "source": "@/components/bookDetails/WishListButton"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "BookCard",
+          "source": "@/components/shared/BookCard"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "type { Metadata }",
+          "source": "next"
+        },
+        {
+          "import": "{ Geist, Geist_Mono }",
+          "source": "next/font/google"
+        },
+        {
+          "import": "Navbar",
+          "source": "@/components/shared/Navbar"
+        },
+        {
+          "import": "BooksProvider",
+          "source": "@/context/BooksContext"
+        },
+        {
+          "import": "{ ToastContainer }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "ListedBooksCard",
+          "source": "@/components/shared/ListedBooksCard"
+        },
+        {
+          "import": "{ BooksContext }",
+          "source": "@/context/BooksContext"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "{ useContext, useState }",
+          "source": "react"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "Banner",
+          "source": "@/components/homepage/Banner"
+        },
+        {
+          "import": "Books",
+          "source": "@/components/homepage/Books"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "{ BooksContext }",
+          "source": "@/context/BooksContext"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "React, { useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ BooksContext }",
+          "source": "@/context/BooksContext"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "React, { useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "{ BooksContext }",
+          "source": "@/context/BooksContext"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "React, { useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "bannerImg",
+          "source": "@/assets/hero_img.jpg"
+        },
+        {
+          "import": "BookCard",
+          "source": "../shared/BookCard"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "logo",
+          "source": "@/assets/book.ico"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "{ IBook }",
+          "source": "@/types/books.type"
+        },
+        {
+          "import": "React, { createContext, ReactNode, useState }",
+          "source": "react"
+        }
+      ],
+      "exports": [
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "metadata",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "BooksContext",
+        "IBook"
+      ],
+      "functions": [
+        {
+          "name": "BookDetailsLoading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBooks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "BookDetailsPage",
+          "parameters": "{ params }: IBookDetailsPageProps",
+          "async": true
+        },
+        {
+          "name": "BooksLoading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBooks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "Books",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "RootLayout",
+          "parameters": "{ children }: LayoutProps<\"/\">",
+          "async": false
+        },
+        {
+          "name": "ListedBooks",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "sortBooks",
+          "parameters": "books: IBook[]",
+          "async": false
+        },
+        {
+          "name": "GlobalLoading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "page",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getPath",
+          "parameters": "x: number, y: number, width: number, height: number",
+          "async": false
+        },
+        {
+          "name": "TriangleBar",
+          "parameters": "props: BarShapeProps",
+          "async": false
+        },
+        {
+          "name": "CustomColorLabel",
+          "parameters": "props: LabelProps",
+          "async": false
+        },
+        {
+          "name": "ReadBooks",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "ReadButton",
+          "parameters": "{ book }: { book: IBook }",
+          "async": false
+        },
+        {
+          "name": "handleReadBook",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "WishListButton",
+          "parameters": "{ book }: { book: IBook }",
+          "async": false
+        },
+        {
+          "name": "handleAddToWishlist",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Banner",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBooks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "Books",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "BookCard",
+          "parameters": "{ book }: IBookCardProps",
+          "async": false
+        },
+        {
+          "name": "ListedBooksCard",
+          "parameters": "{ book }: IListedBooksCardProps",
+          "async": false
+        },
+        {
+          "name": "Navbar",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "BooksProvider",
+          "parameters": "{ children }: { children: ReactNode }",
+          "async": false
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "IBookDetailsPageProps",
+          "fields": [
+            {
+              "name": "params",
+              "type": "Promise<{"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "IBookCardProps",
+          "fields": [
+            {
+              "name": "book",
+              "type": "IBook"
+            }
+          ]
+        },
+        {
+          "name": "IListedBooksCardProps",
+          "fields": [
+            {
+              "name": "book",
+              "type": "IBook"
+            }
+          ]
+        },
+        {
+          "name": "IBooksContext",
+          "fields": [
+            {
+              "name": "readBooks",
+              "type": "IBook[]"
+            },
+            {
+              "name": "setReadBooks",
+              "type": "React.Dispatch<React.SetStateAction<IBook[]>>"
+            },
+            {
+              "name": "wishlist",
+              "type": "IBook[]"
+            },
+            {
+              "name": "setWishlist",
+              "type": "React.Dispatch<React.SetStateAction<IBook[]>>"
+            }
+          ]
+        },
+        {
+          "name": "IBook",
+          "fields": [
+            {
+              "name": "bookId",
+              "type": "number,"
+            },
+            {
+              "name": "bookName",
+              "type": "string,"
+            },
+            {
+              "name": "author",
+              "type": "string,"
+            },
+            {
+              "name": "image",
+              "type": "string,"
+            },
+            {
+              "name": "review",
+              "type": "string,"
+            },
+            {
+              "name": "totalPages",
+              "type": "number,"
+            },
+            {
+              "name": "rating",
+              "type": "number,"
+            },
+            {
+              "name": "category",
+              "type": "string,"
+            },
+            {
+              "name": "tags",
+              "type": "string[],"
+            },
+            {
+              "name": "publisher",
+              "type": "string,"
+            },
+            {
+              "name": "yearOfPublishing",
+              "type": "number"
+            }
+          ]
+        }
+      ],
+      "types": [],
+      "conditionals": [
+        {
+          "pattern": "if_statement",
+          "count": 3
+        },
+        {
+          "pattern": "ternary",
+          "count": 1
+        },
+        {
+          "pattern": "nullish",
+          "count": 1
+        }
+      ]
+    },
+    "bangla-news-24": {
+      "file_count": 23,
+      "file_roles": [
+        "source",
+        "source",
+        "source",
+        "api_route",
+        "page",
+        "layout",
+        "loading",
+        "page",
+        "not_found",
+        "page",
+        "page",
+        "page",
+        "page",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "utility",
+        "utility",
+        "source"
+      ],
+      "imports": [
+        {
+          "import": "{ defineConfig, globalIgnores }",
+          "source": "eslint/config"
+        },
+        {
+          "import": "nextVitals",
+          "source": "eslint-config-next/core-web-vitals"
+        },
+        {
+          "import": "nextTs",
+          "source": "eslint-config-next/typescript"
+        },
+        {
+          "import": "type { NextConfig }",
+          "source": "next"
+        },
+        {
+          "import": "{ auth }",
+          "source": "@/lib/auth"
+        },
+        {
+          "import": "{ toNextJsHandler }",
+          "source": "better-auth/next-js"
+        },
+        {
+          "import": "NewsCard",
+          "source": "@/components/NewsCard"
+        },
+        {
+          "import": "{ notFound }",
+          "source": "next/navigation"
+        },
+        {
+          "import": "type { Metadata }",
+          "source": "next"
+        },
+        {
+          "import": "{ Noto_Serif_Bengali }",
+          "source": "next/font/google"
+        },
+        {
+          "import": "Header",
+          "source": "@/components/Header"
+        },
+        {
+          "import": "Marquee",
+          "source": "@/components/Marquee"
+        },
+        {
+          "import": "{ Toaster }",
+          "source": "react-hot-toast"
+        },
+        {
+          "import": "{ notFound }",
+          "source": "next/navigation"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "MainNews",
+          "source": "@/components/MainNews"
+        },
+        {
+          "import": "MostRead",
+          "source": "@/components/MostRead"
+        },
+        {
+          "import": "NewsCard",
+          "source": "@/components/NewsCard"
+        },
+        {
+          "import": "{ authClient }",
+          "source": "@/lib/auth-client"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "React, { useState }",
+          "source": "react"
+        },
+        {
+          "import": "{ authClient }",
+          "source": "@/lib/auth-client"
+        },
+        {
+          "import": "toast",
+          "source": "react-hot-toast"
+        },
+        {
+          "import": "{ authClient }",
+          "source": "@/lib/auth-client"
+        },
+        {
+          "import": "{ redirect }",
+          "source": "next/navigation"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "NavLinks",
+          "source": "./NavLinks"
+        },
+        {
+          "import": "UserInfo",
+          "source": "./UserInfo"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "MarqueeText",
+          "source": "react-marquee-text"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "{ authClient }",
+          "source": "@/lib/auth-client"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "{ createAuthClient }",
+          "source": "better-auth/react"
+        },
+        {
+          "import": "{ betterAuth }",
+          "source": "better-auth"
+        },
+        {
+          "import": "{ MongoClient }",
+          "source": "mongodb"
+        },
+        {
+          "import": "{ mongodbAdapter }",
+          "source": "better-auth/adapters/mongodb"
+        },
+        {
+          "import": "{ NextResponse }",
+          "source": "next/server"
+        },
+        {
+          "import": "type { NextRequest }",
+          "source": "next/server"
+        },
+        {
+          "import": "{ auth }",
+          "source": "./lib/auth"
+        },
+        {
+          "import": "{ headers }",
+          "source": "next/headers"
+        }
+      ],
+      "exports": [
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "metadata",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "authClient",
+        "auth",
+        "config"
+      ],
+      "functions": [
+        {
+          "name": "CategoryNews",
+          "parameters": "{ params }: { params: { categoryId: string } }",
+          "async": true
+        },
+        {
+          "name": "RootLayout",
+          "parameters": "{ children }: LayoutProps<\"/\">",
+          "async": false
+        },
+        {
+          "name": "LoadingPage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "NewsDetails",
+          "parameters": "{params}: {params: {newsId:string}}",
+          "async": true
+        },
+        {
+          "name": "NotFound",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Home",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "ProfilePage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleUpdateProfile",
+          "parameters": "e:React.SubmitEvent<HTMLElement>",
+          "async": true
+        },
+        {
+          "name": "handleShowForm",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "SignInPage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "onSubmit",
+          "parameters": "e: React.SubmitEvent<HTMLElement>",
+          "async": true
+        },
+        {
+          "name": "handleGoogleSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "handleGithubSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "SignUpPage",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "onSubmit",
+          "parameters": "e: React.SubmitEvent<HTMLElement>",
+          "async": true
+        },
+        {
+          "name": "handleGoogleSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "handleGithubSignIn",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "Header",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "MainNews",
+          "parameters": "{ news }: {news: News[]}",
+          "async": false
+        },
+        {
+          "name": "Marquee",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "MostRead",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "NavLinks",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "NewsCard",
+          "parameters": "{news} : {news:News}",
+          "async": false
+        },
+        {
+          "name": "UserInfo",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleSignout",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "proxy",
+          "parameters": "request: NextRequest",
+          "async": true
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "News",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "name": "imageUrl",
+              "type": "string"
+            },
+            {
+              "name": "imageAlt",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "IOtherSection",
+          "fields": [
+            {
+              "name": "curationId",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "articles",
+              "type": "{"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "name": "imageUrl",
+              "type": "string"
+            },
+            {
+              "name": "imageAlt",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "News",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "name": "imageUrl",
+              "type": "string"
+            },
+            {
+              "name": "imageAlt",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "Headlines",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "MostReadNews",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "Navs",
+          "fields": [
+            {
+              "name": "slug",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "topicId",
+              "type": "string | null"
+            },
+            {
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "name": "scrapable",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "name": "News",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "category",
+              "type": "string"
+            },
+            {
+              "name": "imageUrl",
+              "type": "string"
+            },
+            {
+              "name": "imageAlt",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "types": [],
+      "conditionals": [
+        {
+          "pattern": "if_statement",
+          "count": 1
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        },
+        {
+          "pattern": "logical_and",
+          "count": 1
+        },
+        {
+          "pattern": "optional_chaining",
+          "count": 4
+        },
+        {
+          "pattern": "if_statement",
+          "count": 2
+        },
+        {
+          "pattern": "if_statement",
+          "count": 2
+        },
+        {
+          "pattern": "optional_chaining",
+          "count": 3
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        },
+        {
+          "pattern": "optional_chaining",
+          "count": 1
+        }
+      ]
+    },
+    "Dev-Stack": {
+      "file_count": 13,
+      "file_roles": [
+        "source",
+        "source",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "source",
+        "source",
+        "source"
+      ],
+      "imports": [
+        {
+          "import": "Navbar",
+          "source": "./components/Navbar/Navbar"
+        },
+        {
+          "import": "Hero",
+          "source": "./components/Hero/Hero"
+        },
+        {
+          "import": "Footer",
+          "source": "./components/Footer/Footer"
+        },
+        {
+          "import": "TechnologySection",
+          "source": "./components/TechnologySection/TechnologySection"
+        },
+        {
+          "import": "{ ToastContainer }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "logoText",
+          "source": "../../assets/logo-text.png"
+        },
+        {
+          "import": "HeroPicture",
+          "source": "../../assets/banner-stack.png"
+        },
+        {
+          "import": "{ brandGradient }",
+          "source": "../../brand"
+        },
+        {
+          "import": "logoText",
+          "source": "../../assets/logo-text.png"
+        },
+        {
+          "import": "hamburger",
+          "source": "../../assets/hamburger.png"
+        },
+        {
+          "import": "{ useState }",
+          "source": "react"
+        },
+        {
+          "import": "type { Dispatch, SetStateAction }",
+          "source": "react"
+        },
+        {
+          "import": "type { Tech }",
+          "source": "../../types/Tech"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "{ type Dispatch, type SetStateAction }",
+          "source": "react"
+        },
+        {
+          "import": "type { Tech }",
+          "source": "../../types/Tech"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "type { Tech }",
+          "source": "../../types/Tech"
+        },
+        {
+          "import": "TechnologyCard",
+          "source": "./TechnologyCard"
+        },
+        {
+          "import": "TechnologyGrid",
+          "source": "./TechnologyGrid"
+        },
+        {
+          "import": "YourStack",
+          "source": "./YourStack"
+        },
+        {
+          "import": "{ Suspense, useState }",
+          "source": "react"
+        },
+        {
+          "import": "type { Tech }",
+          "source": "../../types/Tech"
+        },
+        {
+          "import": "type { Dispatch, SetStateAction }",
+          "source": "react"
+        },
+        {
+          "import": "type { Tech }",
+          "source": "../../types/Tech"
+        },
+        {
+          "import": "StackItem",
+          "source": "./StackItem"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "{ StrictMode }",
+          "source": "react"
+        },
+        {
+          "import": "{ createRoot }",
+          "source": "react-dom/client"
+        },
+        {
+          "import": "App",
+          "source": "./App.tsx"
+        },
+        {
+          "import": "react",
+          "source": "@vitejs/plugin-react"
+        },
+        {
+          "import": "{ defineConfig }",
+          "source": "vite"
+        },
+        {
+          "import": "tailwindcss",
+          "source": "@tailwindcss/vite"
+        }
+      ],
+      "exports": [
+        "default",
+        "brandGradient",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "Tech",
+        "default"
+      ],
+      "functions": [
+        {
+          "name": "App",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Footer",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Hero",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Navbar",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleRemoveTechnology",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleSelectTechnology",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getBadgeColor",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "TechnologySection",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleRemoveAll",
+          "parameters": "",
+          "async": false
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "StackItemProps",
+          "fields": [
+            {
+              "name": "technology",
+              "type": "Tech"
+            },
+            {
+              "name": "selectedTechnologies",
+              "type": "Tech[]"
+            },
+            {
+              "name": "setSelectedTechnologies",
+              "type": "Dispatch<SetStateAction<Tech[]>>"
+            }
+          ]
+        },
+        {
+          "name": "TechnologyCardProps",
+          "fields": [
+            {
+              "name": "technology",
+              "type": "Tech"
+            },
+            {
+              "name": "selectedTechnologies",
+              "type": "Tech[]"
+            },
+            {
+              "name": "setSelectedTechnologies",
+              "type": "Dispatch<SetStateAction<Tech[]>>"
+            }
+          ]
+        },
+        {
+          "name": "TechnologyGridProps",
+          "fields": [
+            {
+              "name": "technologyPromise",
+              "type": "Promise<Tech[]>"
+            },
+            {
+              "name": "selectedTechnologies",
+              "type": "Tech[]"
+            },
+            {
+              "name": "setSelectedTechnologies",
+              "type": "Dispatch<SetStateAction<Tech[]>>"
+            }
+          ]
+        },
+        {
+          "name": "YourStackProps",
+          "fields": [
+            {
+              "name": "selectedTechnologies",
+              "type": "Tech[]"
+            },
+            {
+              "name": "setSelectedTechnologies",
+              "type": "Dispatch<SetStateAction<Tech[]>>"
+            }
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "Tech",
+          "definition": "{"
+        }
+      ],
+      "conditionals": [
+        {
+          "pattern": "ternary",
+          "count": 5
+        },
+        {
+          "pattern": "ternary",
+          "count": 2
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        }
+      ]
+    },
+    "Fitlog": {
+      "file_count": 23,
+      "file_roles": [
+        "source",
+        "source",
+        "source",
+        "source",
+        "layout",
+        "loading",
+        "page",
+        "not_found",
+        "page",
+        "page",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "component",
+        "context",
+        "source"
+      ],
+      "imports": [
+        {
+          "import": "{ defineConfig, globalIgnores }",
+          "source": "eslint/config"
+        },
+        {
+          "import": "nextVitals",
+          "source": "eslint-config-next/core-web-vitals"
+        },
+        {
+          "import": "nextTs",
+          "source": "eslint-config-next/typescript"
+        },
+        {
+          "import": "type { NextConfig }",
+          "source": "next"
+        },
+        {
+          "import": "{ Oswald }",
+          "source": "next/font/google"
+        },
+        {
+          "import": "{ Inter }",
+          "source": "next/font/google"
+        },
+        {
+          "import": "type { Metadata }",
+          "source": "next"
+        },
+        {
+          "import": "{ Geist, Geist_Mono }",
+          "source": "next/font/google"
+        },
+        {
+          "import": "Navbar",
+          "source": "@/components/shared/Navbar"
+        },
+        {
+          "import": "Footer",
+          "source": "@/components/shared/Footer"
+        },
+        {
+          "import": "WorkoutProvider",
+          "source": "@/context/WorkoutContext"
+        },
+        {
+          "import": "{ ToastContainer }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "Button",
+          "source": "@/components/shared/Button-1"
+        },
+        {
+          "import": "{ useContext, useState }",
+          "source": "react"
+        },
+        {
+          "import": "{ WorkoutContext }",
+          "source": "@/context/WorkoutContext"
+        },
+        {
+          "import": "PlanWorkoutCard",
+          "source": "@/components/myPlan/PlanWorkoutCard"
+        },
+        {
+          "import": "{ useSearchParams }",
+          "source": "next/navigation"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "Button",
+          "source": "@/components/shared/Button-1"
+        },
+        {
+          "import": "Hero",
+          "source": "@/components/home/Hero"
+        },
+        {
+          "import": "WorkoutLibrary",
+          "source": "@/components/home/WorkoutLibrary"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "{ notFound }",
+          "source": "next/navigation"
+        },
+        {
+          "import": "Badge",
+          "source": "@/components/shared/Badge"
+        },
+        {
+          "import": "AddToPlanButton",
+          "source": "@/components/workoutDetails/AddToPlanButton"
+        },
+        {
+          "import": "SaveButton",
+          "source": "@/components/workoutDetails/SaveButton"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "logo",
+          "source": "@/assets/banner.png"
+        },
+        {
+          "import": "{ oswald, inter }",
+          "source": "@/app/fonts"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "Badge",
+          "source": "@/components/shared/Badge"
+        },
+        {
+          "import": "WorkoutCard",
+          "source": "./WorkoutCard"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "{ useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ WorkoutContext }",
+          "source": "@/context/WorkoutContext"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "Button1",
+          "source": "@/components/shared/Button-1"
+        },
+        {
+          "import": "Button2",
+          "source": "@/components/shared/Button-2"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "logo",
+          "source": "@/assets/logo.png"
+        },
+        {
+          "import": "Link",
+          "source": "next/link"
+        },
+        {
+          "import": "React",
+          "source": "react"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "logo",
+          "source": "@/assets/logo.png"
+        },
+        {
+          "import": "{ useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ WorkoutContext }",
+          "source": "@/context/WorkoutContext"
+        },
+        {
+          "import": "{ usePathname }",
+          "source": "next/navigation"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "{ useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ WorkoutContext }",
+          "source": "@/context/WorkoutContext"
+        },
+        {
+          "import": "Button",
+          "source": "@/components/shared/Button-1"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "addicon",
+          "source": "@/assets/add-icon.png"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "{ useContext }",
+          "source": "react"
+        },
+        {
+          "import": "{ WorkoutContext }",
+          "source": "@/context/WorkoutContext"
+        },
+        {
+          "import": "Button2",
+          "source": "@/components/shared/Button-2"
+        },
+        {
+          "import": "SaveIcon",
+          "source": "@/assets/save-icon.png"
+        },
+        {
+          "import": "Image",
+          "source": "next/image"
+        },
+        {
+          "import": "{ toast }",
+          "source": "react-toastify"
+        },
+        {
+          "import": "{ Workout }",
+          "source": "@/types/Workout"
+        },
+        {
+          "import": "React, { createContext, ReactNode, useState }",
+          "source": "react"
+        }
+      ],
+      "exports": [
+        "default",
+        "default",
+        "default",
+        "oswald",
+        "inter",
+        "default",
+        "metadata",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "default",
+        "WorkoutContext",
+        "Workout"
+      ],
+      "functions": [
+        {
+          "name": "RootLayout",
+          "parameters": "{ children }: LayoutProps<\"/\">",
+          "async": false
+        },
+        {
+          "name": "Loading",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "MyPlan",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "NotFound",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Home",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "getWorkouts",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "WorkoutDetails",
+          "parameters": "{ params }: WorkoutDetailsProps",
+          "async": true
+        },
+        {
+          "name": "Hero",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "WorkoutCard",
+          "parameters": "{ workout }: IWorkoutCardProps",
+          "async": false
+        },
+        {
+          "name": "WorkoutLibrary",
+          "parameters": "",
+          "async": true
+        },
+        {
+          "name": "PlanWorkoutCard",
+          "parameters": "{ workout, isSaved }: PlanWorkoutCardProps",
+          "async": false
+        },
+        {
+          "name": "handleMarkAsDone",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "handleRemove",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Badge",
+          "parameters": "{ children }: BadgeProps",
+          "async": false
+        },
+        {
+          "name": "Button",
+          "parameters": "{ children, onClick, className, disabled = false }: ButtonProps,",
+          "async": false
+        },
+        {
+          "name": "Button2",
+          "parameters": "{ children, onClick, className }: ButtonProps",
+          "async": false
+        },
+        {
+          "name": "Footer",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "Navbar",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "AddToPlanButton",
+          "parameters": "{ workout }: AddToPlanButtonProps",
+          "async": false
+        },
+        {
+          "name": "handleAddToPlan",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "SaveButton",
+          "parameters": "{ workout }: SaveButtonProps",
+          "async": false
+        },
+        {
+          "name": "handleSave",
+          "parameters": "",
+          "async": false
+        },
+        {
+          "name": "WorkoutProvider",
+          "parameters": "{ children }: { children: ReactNode }",
+          "async": false
+        }
+      ],
+      "interfaces": [
+        {
+          "name": "WorkoutDetailsProps",
+          "fields": [
+            {
+              "name": "params",
+              "type": "Promise<{"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "IWorkoutCardProps",
+          "fields": [
+            {
+              "name": "workout",
+              "type": "Workout"
+            }
+          ]
+        },
+        {
+          "name": "PlanWorkoutCardProps",
+          "fields": [
+            {
+              "name": "workout",
+              "type": "Workout"
+            },
+            {
+              "name": "isSaved",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "name": "BadgeProps",
+          "fields": [
+            {
+              "name": "children",
+              "type": "React.ReactNode"
+            }
+          ]
+        },
+        {
+          "name": "ButtonProps",
+          "fields": [
+            {
+              "name": "children",
+              "type": "React.ReactNode"
+            },
+            {
+              "name": "onClick",
+              "type": "() => void"
+            },
+            {
+              "name": "className",
+              "type": "string"
+            },
+            {
+              "name": "disabled",
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "name": "ButtonProps",
+          "fields": [
+            {
+              "name": "children",
+              "type": "React.ReactNode"
+            },
+            {
+              "name": "onClick",
+              "type": "() => void"
+            },
+            {
+              "name": "className",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "AddToPlanButtonProps",
+          "fields": [
+            {
+              "name": "workout",
+              "type": "Workout"
+            }
+          ]
+        },
+        {
+          "name": "SaveButtonProps",
+          "fields": [
+            {
+              "name": "workout",
+              "type": "Workout"
+            }
+          ]
+        },
+        {
+          "name": "IWorkoutContext",
+          "fields": [
+            {
+              "name": "planWorkouts",
+              "type": "Workout[]"
+            },
+            {
+              "name": "setPlanWorkouts",
+              "type": "React.Dispatch<React.SetStateAction<Workout[]>>"
+            },
+            {
+              "name": "savedWorkouts",
+              "type": "Workout[]"
+            },
+            {
+              "name": "setSavedWorkouts",
+              "type": "React.Dispatch<React.SetStateAction<Workout[]>>"
+            }
+          ]
+        },
+        {
+          "name": "Workout",
+          "fields": [
+            {
+              "name": "id",
+              "type": "number"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "type": "string"
+            },
+            {
+              "name": "muscleGroups",
+              "type": "string[]"
+            },
+            {
+              "name": "equipment",
+              "type": "string"
+            },
+            {
+              "name": "difficulty",
+              "type": "string"
+            },
+            {
+              "name": "duration",
+              "type": "number"
+            },
+            {
+              "name": "caloriesBurned",
+              "type": "number"
+            },
+            {
+              "name": "sets",
+              "type": "number"
+            },
+            {
+              "name": "reps",
+              "type": "number"
+            },
+            {
+              "name": "rating",
+              "type": "number"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "instructions",
+              "type": "string[]"
+            }
+          ]
+        }
+      ],
+      "types": [],
+      "conditionals": [
+        {
+          "pattern": "ternary",
+          "count": 2
+        },
+        {
+          "pattern": "if_statement",
+          "count": 2
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        },
+        {
+          "pattern": "logical_and",
+          "count": 1
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        },
+        {
+          "pattern": "ternary",
+          "count": 3
+        },
+        {
+          "pattern": "ternary",
+          "count": 2
+        },
+        {
+          "pattern": "ternary",
+          "count": 2
+        },
+        {
+          "pattern": "logical_and",
+          "count": 2
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        },
+        {
+          "pattern": "if_statement",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "recurring_patterns": []
+}
